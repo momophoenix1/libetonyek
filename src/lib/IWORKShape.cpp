@@ -425,6 +425,7 @@ IWORKPathPtr_t makeQuoteBubblePath(const IWORKSize &size, const double radius, c
       inner_points.push_back(Point(tailX,tailY));
       transform(inner_points, translate(1, 1) * scale(0.5, 0.5) * scale(size.m_width, size.m_height));
       const IWORKPathPtr_t path = makePolyLine(inner_points);
+return path;
 
 }
 
